@@ -1,7 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// Adjusted import path for the video
+
+// Updated import path for hero-video
 import heroVideo from '../assets/hero-video/herovideo.mp4';
 
 const Hero = () => {
@@ -16,6 +17,13 @@ const Hero = () => {
       once: true,
       easing: 'ease-out'
     });
+
+    // Explicitly handle video autoplay
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => {
+        console.log("Autoplay issue handled:", error);
+      });
+    }
   }, []);
 
   // Switches audio states cleanly without freezing or pausing the video frame timeline
@@ -39,13 +47,13 @@ const Hero = () => {
       {/* Background Video - configured to safely launch instantly with autoplay */}
       <video
         ref={videoRef}
+        src={heroVideo}
         autoPlay
         loop
         muted={isMuted}
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-        <source src={heroVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -124,7 +132,7 @@ const Hero = () => {
             )}
           </div>
           <span className="text-white text-[9px] md:text-[11px]  tracking-widest uppercase opacity-60 group-hover:opacity-100 transition-opacity mt-1">
-            {isMuted ?"Unmute Reel" :"Mute Sound"}
+            {isMuted ? "Unmute Reel" : "Mute Sound"}
           </span>
         </div>
       </div>
