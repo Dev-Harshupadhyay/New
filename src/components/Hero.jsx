@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // Updated import path for hero-video
-import heroVideo from '../assets/hero-video/herovideo.mp4';
+import heroVideo from '../assets/hero video/herovideo.mp4';
 
 const Hero = () => {
   const videoRef = useRef(null);
