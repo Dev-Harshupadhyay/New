@@ -42,7 +42,7 @@ const About = () => {
           
           <h2 className="text-4xl md:text-5xl  text-black mb-4">Hello!</h2>
           <p className="text-lg  mb-12 leading-relaxed max-w-3xl text-red-50">
-            Hi, my name is <span className="text-black text-xl  mx-1 tracking-wide uppercase">SHAJITH</span>, a passionate full-stack developer dedicated to crafting clean, functional, and highly scalable web applications.
+            Hi, my name is <span className="text-black text-xl  mx-1 tracking-wide uppercase">HARSH UPADHYAY</span>, a passionate full-stack developer dedicated to crafting clean, functional, and highly scalable web applications.
           </p>
 
           {/* Horizontal Skills Row (Transparent & Large) */}
