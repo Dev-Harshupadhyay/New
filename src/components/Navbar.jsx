@@ -153,7 +153,7 @@ const Navbar = () => {
                Hire Me
              </a>
              <a 
-               href="https://github.com/harsh23" 
+               href="https://github.com/Dev-Harshupadhyay" 
                target="_blank" 
                rel="noopener noreferrer"
                className="flex items-center justify-center gap-2 text-white/90  hover:text-black transition-colors pb-4"
