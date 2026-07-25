@@ -63,7 +63,7 @@ const Navbar = () => {
         {/* Right Side: Responsive CTA Frame Button & GitHub */}
         <div className="hidden md:flex items-center space-x-5">
           <a 
-            href="https://github.com/harsh23" 
+            href="https://github.com/Dev-Harshupadhyay" 
             target="_blank" 
             rel="noopener noreferrer"
             className={`transition-all duration-500 transform hover:scale-110 ${
@@ -76,7 +76,7 @@ const Navbar = () => {
             </svg>
           </a>
           <a 
-            href="https://drive.google.com/drive/folders/1-2NCKFzCs41FypumOScQ5YDw_TefleHN" 
+            href="https://drive.google.com/file/d/1o_eqt4gq1vPgHpF6pTMchgDzgGQ9ihox/view?usp=drivesdk" 
             target="_blank"
             rel="noopener noreferrer"
             className={`px-5 py-2 rounded-full text-sm  transition-all duration-500 border ${
