@@ -10,7 +10,7 @@ const Projects = () => {
       title:'Cinevood',
       subtitle: 'Movie Discovery & Streaming Info Platform',
       description: 'Built a movie discovery web app where users can browse trending titles, search for movies, and view details like ratings, genres, and overviews in a clean, fast interface.',
-      image: project1Img, 
+      image: project2Img, 
       link: 'https://cinenvood.onrender.com',
       features: [
         'Movie search and browsing',
@@ -24,7 +24,7 @@ const Projects = () => {
       title: 'Tarzau',
       subtitle: 'Web Application',
       description: 'Developed and deployed a full front-end web application focused on smooth performance, clean UI, and a responsive layout that works well across devices.',
-      image: project2Img, 
+      image: project3Img, 
       link: 'https://tarzau.netlify.app',
       features: [
         'Clean, modern user interface',
@@ -38,7 +38,7 @@ const Projects = () => {
       title: 'Weather (Climatek)',
       subtitle: 'Real-Time Weather Forecast App',
       description: 'Created a weather forecast application that fetches real-time weather data for any city, showing current conditions and upcoming forecasts in a simple, easy-to-read interface.',
-      image: project3Img, 
+      image: project1Img, 
       link: 'https://climatek.netlify.app',
       features: [
         'Real-time weather data by city search',
