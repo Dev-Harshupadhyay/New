@@ -4,7 +4,7 @@
 
 ### 🚀 Web Developer & Automation Enthusiast
 
-[![Portfolio](https://img.shields.io/badge/Live_Portfolio-000000?style=for-the-badge&logo=render&logoColor=white)](https://harsh-6z59.onrender.com)
+[![Portfolio](https://img.shields.io/badge/Live_Portfolio-000000?style=for-the-badge&logo=render&logoColor=white)](https://new-9uxj.onrender.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Dev-Harshupadhyay)
 
 ---
@@ -19,7 +19,7 @@
 
 > **Passionate Developer** creating modern web platforms, automation scripts, and custom API-driven solutions.
 
-* 🌐 **Live Portfolio:** [Visit My Portfolio Website](https://harsh-6z59.onrender.com)
+* 🌐 **Live Portfolio:** [Visit My Portfolio Website](https://new-9uxj.onrender.com)
 * ⚡ **Tech Stack:** React, Next.js, Vite, Tailwind CSS, JavaScript & Python.
 * 🎬 **Featured Project:** **Cinevood** – A comprehensive movie review platform with admin management.
 * 🌤️ **Utility Apps:** **Weather App** – Real-time interactive weather tracking application.
@@ -37,17 +37,6 @@
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
 </p>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Dev-Harshupadhyay&show_icons=true&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=ffffff&text_color=a1a1aa&icon_color=ffffff" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dev-Harshupadhyay&layout=compact&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=ffffff&text_color=a1a1aa" width="48%" />
-</div>
-
-<br/>
 
 ---
 
