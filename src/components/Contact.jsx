@@ -33,7 +33,7 @@ const Contact = () => {
 
   // Handle form submission logic
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevents the painful page-refresh crash
+    e.preventDefault(); // Prevents page refresh
 
     if (!formData.permission) {
       alert("Please accept the contact permission checkbox.");
@@ -43,7 +43,8 @@ const Contact = () => {
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method:"POST",
-        headers: {"Content-Type":"application/json",
+        headers: {
+          "Content-Type":"application/json",
           Accept:"application/json",
         },
         body: JSON.stringify({
@@ -77,22 +78,22 @@ const Contact = () => {
         className="absolute top-0 left-0 w-full h-full flex flex-col justify-start items-center overflow-hidden pointer-events-none z-0 pt-16 md:pt-12"
       >
         <h1 
-          className="text-[15vw] md:text-[12vw] leading-[0.8] text-white/15 uppercase tracking-tighter select-none origin-top font-black"
+          className="text-[15vw] md:text-[12vw] leading-[0.8] text-white/10 uppercase tracking-tighter select-none origin-top font-black"
         >
           Contact
         </h1>
       </motion.div>
 
-      {/* Form Card Overlay (Upgraded from AOS to Framer Motion built-in viewport engine) */}
+      {/* Form Card Overlay */}
       <div className="relative z-10 w-full flex justify-end items-end">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin:"-100px" }}
           transition={{ duration: 0.8, ease:"easeOut" }}
-          className="bg-[#ff2a2a] w-full md:w-[85%] lg:w-[75%] p-8 md:p-16 text-white flex flex-col justify-between"
+          className="bg-gradient-to-br from-[#18181b] to-[#0f0f11] border border-white/10 shadow-2xl w-full md:w-[85%] lg:w-[75%] p-8 md:p-16 text-white flex flex-col justify-between backdrop-blur-md"
         >
-          <div className="text-xs  tracking-[0.2em] mb-12 md:mb-20 uppercase opacity-90">
+          <div className="text-xs tracking-[0.2em] mb-12 md:mb-20 uppercase text-gray-400 font-semibold">
             Reach Us
           </div>
 
@@ -109,7 +110,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="First Name" 
                     required
-                    className="w-full bg-transparent border-b border-white/40 pb-3 text-lg focus:outline-none focus:border-white transition-colors placeholder-white  rounded-none"
+                    className="w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-white transition-colors placeholder-gray-500 rounded-none text-white"
                   />
                 </div>
                 <div className="relative">
@@ -120,7 +121,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Last Name" 
                     required
-                    className="w-full bg-transparent border-b border-white/40 pb-3 text-lg focus:outline-none focus:border-white transition-colors placeholder-white  rounded-none"
+                    className="w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-white transition-colors placeholder-gray-500 rounded-none text-white"
                   />
                 </div>
                 <div className="relative">
@@ -131,7 +132,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Email" 
                     required
-                    className="w-full bg-transparent border-b border-white/40 pb-3 text-lg focus:outline-none focus:border-white transition-colors placeholder-white  rounded-none"
+                    className="w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-white transition-colors placeholder-gray-500 rounded-none text-white"
                   />
                 </div>
                 <div className="relative">
@@ -145,7 +146,7 @@ const Contact = () => {
                     title="Please enter a valid 10-digit mobile number"
                     maxLength="10"
                     required
-                    className="w-full bg-transparent border-b border-white/40 pb-3 text-lg focus:outline-none focus:border-white transition-colors placeholder-white  rounded-none"
+                    className="w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-white transition-colors placeholder-gray-500 rounded-none text-white"
                   />
                 </div>
               </div>
@@ -159,7 +160,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Type your message here" 
                     required
-                    className="w-full h-full min-h-[120px] bg-transparent border-b border-white/40 pb-3 text-lg focus:outline-none focus:border-white transition-colors placeholder-white  resize-none rounded-none"
+                    className="w-full h-full min-h-[120px] bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-white transition-colors placeholder-gray-500 resize-none rounded-none text-white"
                   ></textarea>
                 </div>
               </div>
@@ -169,12 +170,12 @@ const Contact = () => {
             <div className="flex flex-col md:flex-row gap-12 mt-4">
               {/* Left text */}
               <div 
-                className="flex-1 flex items-start gap-4 text-sm text-white/90 cursor-pointer select-none"
+                className="flex-1 flex items-start gap-4 text-sm text-gray-300 cursor-pointer select-none hover:text-white transition-colors"
                 onClick={() => setFormData(prev => ({ ...prev, permission: !prev.permission }))}
               >
-                <div className={`mt-0.5 w-6 h-6 md:w-5 md:h-5 rounded-sm border-2 flex items-center justify-center shrink-0 transition-colors ${formData.permission ? 'bg-white border-white' : 'border-white/60 bg-transparent'}`}>
+                <div className={`mt-0.5 w-6 h-6 md:w-5 md:h-5 rounded-sm border flex items-center justify-center shrink-0 transition-all ${formData.permission ? 'bg-white border-white' : 'border-white/40 bg-transparent'}`}>
                   {formData.permission && (
-                    <svg className="w-4 h-4 text-[#ff2a2a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
                     </svg>
                   )}
@@ -185,12 +186,12 @@ const Contact = () => {
               </div>
 
               {/* Right text & button */}
-              <div className="flex-1 flex flex-col gap-8 text-xs text-white/70  justify-end">
+              <div className="flex-1 flex flex-col gap-8 text-xs text-white/70 justify-end">
                 <div className="flex flex-col sm:flex-row sm:justify-end sm:items-end gap-6 h-full">
                   
                   <button 
                     type="submit" 
-                    className="px-8 py-3 rounded-full border border-white/40 text-white  flex items-center justify-center gap-3 hover:bg-white hover:text-[#ff2a2a] transition-all duration-300 group whitespace-nowrap self-start sm:self-auto"
+                    className="px-8 py-3 rounded-full border border-white/30 text-white flex items-center justify-center gap-3 hover:bg-white hover:text-black transition-all duration-300 group whitespace-nowrap self-start sm:self-auto font-medium"
                   >
                     Send
                     <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
